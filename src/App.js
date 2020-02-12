@@ -3,6 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { Redirect } from 'react-router';
+import About from './pages/About';
+import Career from './pages/Projects';
+import Projects from './pages/Projects';
 
 import {
   BrowserRouter as Router,
@@ -32,7 +35,7 @@ class App extends React.Component {
           </header>
           <body>
           <Navbar bg="dark" variant="dark">
-            <Navbar.Brand onClick = {()=> this.setState ({route:"home"})}>
+            <Navbar.Brand onClick = {()=> this.setState ({route:"about"})}>
                   <img
                     src="/logo.svg"
                     width="30"
@@ -50,14 +53,13 @@ class App extends React.Component {
 
           <Router>
             {this.state.route === "career" && <Redirect to="/career"/>}
-            {this.state.route === "about" && <Redirect to="/about"/>}
+            {this.state.route === "about" && <Redirect to="/"/>}
             {this.state.route === "projects" && <Redirect to="/projects"/>}
-            {this.state.route === "home" && <Redirect to="/"/>}
             <Switch>
               <Route path="/about"> <About /> </Route>
               <Route path="/career"> <Career /> </Route>
               <Route path="/projects"> <Projects /> </Route>
-              <Route path="/"> <Home /> </Route>
+              <Route path="/"> <About /> </Route>
             </Switch>
           </Router>
           </body>
@@ -67,19 +69,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function Projects() {
-  return <h2>Projects</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Career() {
-  return <h2>Career</h2>;
-}
