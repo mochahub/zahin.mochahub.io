@@ -6,6 +6,7 @@ import { Redirect } from 'react-router';
 import About from './pages/About';
 import Career from './pages/Projects';
 import Projects from './pages/Projects';
+import './app.css';
 
 import {
   BrowserRouter as Router,
@@ -24,7 +25,7 @@ class App extends React.Component {
 
   render(){
       return (
-        <html>
+        <html >
           <header>
             <link
               rel="stylesheet"
@@ -52,15 +53,17 @@ class App extends React.Component {
             </Navbar>
 
           <Router>
-            {this.state.route === "career" && <Redirect to="/career"/>}
-            {this.state.route === "about" && <Redirect to="/"/>}
-            {this.state.route === "projects" && <Redirect to="/projects"/>}
-            <Switch>
-              <Route path="/about"> <About /> </Route>
-              <Route path="/career"> <Career /> </Route>
-              <Route path="/projects"> <Projects /> </Route>
-              <Route path="/"> <About /> </Route>
-            </Switch>
+              {this.state.route === "career" && <Redirect to="/career"/>}
+              {this.state.route === "about" && <Redirect to="/"/>}
+              {this.state.route === "projects" && <Redirect to="/projects"/>}
+            <div className="background">            
+              <Switch>
+                <Route path="/about"> <About /> </Route>
+                <Route path="/career"> <Career /> </Route>
+                <Route path="/projects"> <Projects /> </Route>
+                <Route path="/"> <About /> </Route>
+              </Switch>
+            </div>
           </Router>
           </body>
         </html>
