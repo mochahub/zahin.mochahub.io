@@ -43,7 +43,6 @@ class App extends React.Component {
               crossorigin="anonymous"
             />
           </header>
-          {/* <MuiThemeProvider theme={theme}> */}
             <Stepper nonLinear activeStep={this.state.route} style={{ backgroundColor: "transparent"}}>
               {labels.map((label, index) => (
                 <Step key={label.replace(/\s+/g, '').toLowerCase()} >
@@ -70,7 +69,6 @@ class App extends React.Component {
               </Switch>
             </div>
           </Router>
-          {/* </MuiThemeProvider> */}
         </html>
         )
   }
