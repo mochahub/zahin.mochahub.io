@@ -36,11 +36,20 @@ const cards = [
         "desc":`A <code>Hackathon</code> project for CUHacks 19. This web-app let users vote on and add songs to a users spotify queue.
         The use case being cafes, parties, and offices. This project used
         <code>ReactJS</code>, <code>Spotify Web SDK</code>, <code>Flask</code>`,
-        "tags":["ReactJS", "Redux", "Spotify Web SDK", "Solace Pub","Flask","Material Design"],
+        "tags":["ReactJS", "Redux", "Spotify Web SDK", "Solace Pub","Flask","Material Design", "Hackathon"],
         "link": "https://github.com/groupspotify",
         "linkText": "Github Org",
         "media":"https://avatars0.githubusercontent.com/u/47481227?s=200&v=4"
     },
+    {
+        "title":"Cool Down TO",
+        "desc":`A <code>Hackathon</code> project for RUHacks 18. This Android app shows Torontonians the closest air conditioned building.`,
+        "tags":["Android", "Open Data", "Hackathon"],
+        "link": "https://github.com/zahin-mohammad/RuHacks18",
+        "linkText": "Github Repo",
+        "media":"https://lh3.googleusercontent.com/jV60D3v7d1oiZbjds4Q1AIFwfVSnQlUXzFLmTK0bNZY0ojWV8eGiISjpHMARKPA4qw=w1440-h620-rw"
+    },
+
 ]
 
 
@@ -49,8 +58,8 @@ export default class Projects extends Component {
     createChips(card){
         var chips = [];
         for (var i = 0; i < card.tags.length; i++) 
-            chips.push(<Chip size="small" label={card.tags[i]} style={{margin:"4px"}}/>);
-        return <div style={{paddingTop:"5vh"}}>{chips}</div>
+            chips.push(<Chip key ={i} size="small" label={card.tags[i]} style={{margin:"4px"}}/>);
+        return <div style={{paddingTop:"2vh"}}>{chips}</div>
     }
     createCard(card){
         return(
@@ -79,10 +88,10 @@ export default class Projects extends Component {
 
     createRow(start){
         return (
-            <Row noGutters = {false} style = {{paddingTop:"5vh"}}className="align-items-start ">
-                {cards[start] && this.createCard(cards[start])}
-                {cards[start+1] && this.createCard(cards[start+1])}
-                {cards[start] && this.createCard(cards[start+2])}
+            <Row key = {start} noGutters = {false} style = {{paddingTop:"5vh"}}className="align-items-start ">
+                {start < cards.length && this.createCard(cards[start])}
+                {start+1 < cards.length && this.createCard(cards[start+1])}
+                {start+2 < cards.length && this.createCard(cards[start+2])}
             </Row>
         )
     }

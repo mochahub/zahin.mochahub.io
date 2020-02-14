@@ -21,34 +21,31 @@ const labels = ["About Me", "Projects", "Career"]
 
 class App extends React.Component {
 
-  componentWillMount() {
-    this.setState({route:this.props.location})
-  }
+  constructor(props){
+    super(props)
 
-  constructor(){
-    super()
     this.state = {
-     route: "aboutme"
+      route: ""
     }
   }
+  labelEqualsState = (label) => label.replace(/\s+/g, '').toLowerCase() === this.state.route;
 
   render(){
       return (
-        <html >
-          <header>
-            <link
-              rel="stylesheet"
-              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-              crossorigin="anonymous"
-            />
-          </header>
-            <Stepper nonLinear activeStep={this.state.route} style={{ backgroundColor: "transparent"}}>
+            <section className = "background">
+            <Stepper 
+              nonLinear activeStep={labels.findIndex(this.labelEqualsState)} 
+              style={{ backgroundColor: "transparent"}}>
               {labels.map((label, index) => (
-                <Step key={label.replace(/\s+/g, '').toLowerCase()} >
-                  <StepButton style = {{color:"white"}}
-                  onClick={()=> this.setState ({route:label.replace(/\s+/g, '').toLowerCase()})} 
-                  completed={this.state.route === label.replace(/\s+/g, '').toLowerCase()}>
+               
+                <Step 
+                  key={label.replace(/\s+/g, '').toLowerCase()} >
+                  <StepButton 
+                    onClick={()=> {
+                      console.log(this.state);
+                      this.setState ({route:label.replace(/\s+/g, '').toLowerCase()});
+                    }} 
+                    completed={this.state.route === label.replace(/\s+/g, '').toLowerCase()}>
                     <StepLabel>
                       <div>{label}</div> 
                     </StepLabel>
@@ -62,14 +59,13 @@ class App extends React.Component {
               {this.state.route === "projects" && <Redirect to="/projects"/>}
             <div className="background">            
               <Switch>
-                <Route path="/career"> <Career /> </Route>
-                <Route path="/projects"> <Projects /> </Route>
-                <Route path="/aboutme"> <About /> </Route>
-                <Route path="/"> <About /> </Route>
+                <Route path="/career" component = {Career}/>
+                <Route path="/projects" component = {Projects}/>
+                <Route path={["/", "/aboutme"]} component = {About}/>
               </Switch>
             </div>
           </Router>
-        </html>
+          </section>
         )
   }
 }
