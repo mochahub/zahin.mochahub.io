@@ -12,7 +12,7 @@ const ReactMarkdown = require('react-markdown/with-html')
 const cards = [
     {
         "title":"Github Analytics",
-        "desc":`A Work in Progress. Check in another time for updates.`,
+        "desc":`A Work in Progress. This project scrapes the data on Github and analyzes them. For example, most used reaction in commit comments.`,
         "tags":["Python", "Go", "Web Scrapper"],
         "link": "https://github.com/zahin-mohammad/gh-analytics",
         "linkText": "Github Repo",
