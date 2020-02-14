@@ -1,25 +1,34 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 import { Redirect } from 'react-router';
 import About from './pages/About';
-import Career from './pages/Projects';
+import Career from './pages/Career';
 import Projects from './pages/Projects';
 import './app.css';
-
+import Stepper from '@material-ui/core/Stepper';
+import Step from '@material-ui/core/Step';
+import StepButton from '@material-ui/core/StepButton';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
+import { StepLabel } from "@material-ui/core";
+
+
+
+const labels = ["About Me", "Projects", "Career"]
 
 class App extends React.Component {
+
+  componentWillMount() {
+    this.setState({route:this.props.location})
+  }
 
   constructor(){
     super()
     this.state = {
-     route: "about"
+     route: "aboutme"
     }
   }
 
@@ -34,41 +43,36 @@ class App extends React.Component {
               crossorigin="anonymous"
             />
           </header>
-          <body>
-          <Navbar bg="dark" variant="dark">
-            <Navbar.Brand onClick = {()=> this.setState ({route:"about"})}>
-                  <img
-                    src="/logo.svg"
-                    width="30"
-                    height="30"
-                    className="d-inline-block align-top"
-                    alt="Logo"
-                  />
-                </Navbar.Brand>
-              <Nav className="mr-auto">
-                <Nav.Link onClick = {()=> this.setState ({route:"about"})}>About Me</Nav.Link>
-                <Nav.Link onClick = {()=>this.setState ({route:"projects"})}>Projects</Nav.Link>
-                <Nav.Link onClick = {()=>this.setState ({route:"career"})}>Career</Nav.Link>
-              </Nav>
-            </Navbar>
-
+          {/* <MuiThemeProvider theme={theme}> */}
+            <Stepper nonLinear activeStep={this.state.route} style={{ backgroundColor: "transparent"}}>
+              {labels.map((label, index) => (
+                <Step key={label.replace(/\s+/g, '').toLowerCase()} >
+                  <StepButton style = {{color:"white"}}
+                  onClick={()=> this.setState ({route:label.replace(/\s+/g, '').toLowerCase()})} 
+                  completed={this.state.route === label.replace(/\s+/g, '').toLowerCase()}>
+                    <StepLabel>
+                      <div>{label}</div> 
+                    </StepLabel>
+                  </StepButton>
+                </Step>
+              ))}
+            </Stepper>
           <Router>
               {this.state.route === "career" && <Redirect to="/career"/>}
-              {this.state.route === "about" && <Redirect to="/"/>}
+              {this.state.route === "aboutme" && <Redirect to="/aboutme"/>}
               {this.state.route === "projects" && <Redirect to="/projects"/>}
             <div className="background">            
               <Switch>
-                <Route path="/about"> <About /> </Route>
                 <Route path="/career"> <Career /> </Route>
                 <Route path="/projects"> <Projects /> </Route>
+                <Route path="/aboutme"> <About /> </Route>
                 <Route path="/"> <About /> </Route>
               </Switch>
             </div>
           </Router>
-          </body>
+          {/* </MuiThemeProvider> */}
         </html>
         )
   }
 }
-
 export default App;
