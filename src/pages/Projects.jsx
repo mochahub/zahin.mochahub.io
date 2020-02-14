@@ -63,7 +63,7 @@ export default class Projects extends Component {
     }
     createCard(card){
         return(
-            <Col sm = {12} lg={4}>
+            <Col sm = {12} lg={4} style = {{paddingBottom:"5vh"}}>
                 <Card bg="dark" text="white" >
                     <Card.Img variant="top" src={card.media} />
                     <Card.Body>
@@ -88,7 +88,7 @@ export default class Projects extends Component {
 
     createRow(start){
         return (
-            <Row key = {start} noGutters = {false} style = {{paddingTop:"5vh"}}className="align-items-start ">
+            <Row key = {start} className="align-items-start ">
                 {start < cards.length && this.createCard(cards[start])}
                 {start+1 < cards.length && this.createCard(cards[start+1])}
                 {start+2 < cards.length && this.createCard(cards[start+2])}

@@ -9,12 +9,14 @@ const ReactMarkdown = require('react-markdown/with-html')
 
 
 const markdown = 
-`Hey I am a 3B Computer Engineering student at the University of Waterloo with a focus in software development. I expect to graduate in Winter 2021.  
+`Currently: <code> Unemployed and looking for Fall 2020 Internships</code>. You can reach out to me at <code>zahin.dev@gmail.com</code>.      
+
+Hey, I am a 3B Computer Engineering student at the University of Waterloo with a focus on software development. I expect to graduate in Winter 2021.  
   
-I am interested in backend development, cryptocurrency and machine learning.
+I am interested in backend development, cryptocurrency, and machine learning.
 I've previously worked at <code> Lumina </code> and <code>Aterica</code> as a backend developer.  
 
-Outside of software development I enjoy hiking, ping-pong, financial life-hacks, and watching van-life conversion videos on youtube.`
+Outside of software development, I enjoy hiking, ping-pong, financial life-hacks, and watching van-life conversion videos on youtube.`
 export default class About extends Component {
     render() {
         return (
