@@ -11,6 +11,14 @@ const ReactMarkdown = require('react-markdown/with-html')
 
 const cards = [
     {
+        "title":"Github Analytics",
+        "desc":`A Work in Progress. Check in another time for updates.`,
+        "tags":["Python", "Go", "Web Scrapper"],
+        "link": "https://github.com/zahin-mohammad/gh-analytics",
+        "linkText": "Github Repo",
+        "media":"https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+    },
+    {
         "title":"Power Meter",
         "desc":`A weight-lifting tracking app. Currently there is only an Android application,
         but future releases will include a backend-sync, a web application and an iOS application.  
