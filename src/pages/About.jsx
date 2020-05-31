@@ -21,7 +21,7 @@ const ghCalendarTheme = {
 const markdown = (`
 Currently \`unemployed\` and looking for \`Fall 2020\` internships. You can reach out to me at [zahin.dev@gmail.com](mailto:zahin.dev@gmail.com?subject[From%Portfolio]).  
 
-Hey I am a 4A Computer Engineering student at the University of Waterloo and am expected to grduate in June 2021. Some interesting courses I have taken/taking are (🚧 in progress):
+Hey I am a 4A Computer Engineering student at the University of Waterloo and am expected to graduate in June 2021. Some interesting courses I have taken/taking are (🚧 in progress):
 - Software Design and Architectures 🚧
 - Reinforcement Learning 🚧
 - Cooperative and Adaptive Algorithms 🚧
@@ -29,7 +29,7 @@ Hey I am a 4A Computer Engineering student at the University of Waterloo and am 
 - Compilers (89%)
 - Algorithms and Data Structures (81%)
 
-Throughout my university schooling and internships I have had a focus on software development. I am interested in backend development, cryptocurrency and machine learning / artifical intelligence. My most recent work experiences were at [Lumina](https://www.lumina.app/) and [Aterica](https://www.aterica.com/), both for backend development.  
+Throughout my university schooling and internships I have had a focus on software development, automation and ml/ai. I am most interested in backend development, cryptocurrency and machine learning / artifical intelligence. My most recent work experiences were at [Lumina](https://www.lumina.app/) and [Aterica](https://www.aterica.com/), both for backend development.  
 
 Outside of software development, I enjoy hiking, ping-pong, day-trading and making ☕!
 `);
