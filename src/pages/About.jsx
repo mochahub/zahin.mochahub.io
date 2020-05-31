@@ -6,7 +6,7 @@ import GitHubCalendar from 'react-github-calendar';
 import ReactMarkdown from 'react-markdown';
 import ReactTooltip from 'react-tooltip';
 import MyImage from '../assets/me.jpg';
-
+import Typography from '@material-ui/core/Typography';
 
 const ghCalendarTheme = {
     background: 'transparent',
@@ -53,7 +53,9 @@ export default class About extends Component {
                 <Row noGutters = {false} style ={{paddingTop:"10vh"}} className="align-items-center">
                 <Col sm = {12 }lg={6}>
                     <div  style = {{textAlign:"center"}}>
-                        <h1>Zahin Mohammad</h1>
+                        <Typography gutterBottom variant="h2" component="h2">
+                            Zahin Mohammad
+                        </Typography>
                         <img
                             style={{width:"300px", height:"300px", borderRadius:"100%"}}
                             className = "circle-div"
