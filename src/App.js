@@ -7,7 +7,7 @@ import Projects from './pages/Projects';
 import DarkTheme from 'react-dark-theme';
 import Theme, {lightTheme, darkTheme} from './styles';
 import {Navbar, Nav} from 'react-bootstrap';
-import ResumeFile from './zahin_resume.pdf';
+import ResumeFile from './assets/zahin_resume.pdf';
 
 import {
   BrowserRouter as Router,
@@ -38,7 +38,7 @@ class App extends React.Component {
       return (
         <div style={{backgroundColor:Theme.background, color:Theme.text}}>
          
-          <Navbar bg="vh" sticky="top">
+          <Navbar style={{backgroundColor: Theme.background}} sticky="top">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               {/* TODO Add mochahub logo*/ }
