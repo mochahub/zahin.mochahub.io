@@ -28,7 +28,7 @@ const cards = [
         "tags":["Python", "Heroku", "Crypto", "Slack"],
         "link": "https://github.com/zahin-mohammad/nrg-slack-app",
         "linkText": "Github Repo",
-        "media":"https://github.com/zahin-mohammad/nrg-slack-app/blob/master/energi.png?raw=true"
+        "media":"https://raw.githubusercontent.com/zahin-mohammad/nrg-slack-app/307a4303d11c692d0c8f6c7a6c455e21ca65dd90/energi.svg"
     },
     {
         "title":"Social Media PoC",
@@ -36,7 +36,7 @@ const cards = [
         "tags":["React.js", "Express.js", "MySQL", "Docker"],
         "link": "https://github.com/zahin-mohammad/nrg-slack-app",
         "linkText": "Github Repo",
-        "media":"https://github.com/zahin-mohammad/ece356-project/blob/master/Github%20PoC.png?raw=true"
+        "media":"https://raw.githubusercontent.com/zahin-mohammad/ece356-project/64702211c23743acf1d53ee7dee6388596b1c743/Github-PoC.svg"
     },
     {
         "title":"Power Meter",
@@ -44,7 +44,7 @@ const cards = [
         "tags":["Android","Kotlin","Room","Epoxy", "MVVM"],
         "link": "https://github.com/power-meter",
         "linkText": "Github Org",
-        "media":"https://github.com/power-meter/android-client/blob/master/Power%20Meter.png?raw=true"
+        "media":"https://raw.githubusercontent.com/power-meter/android-client/2de884e718b19c9dbe222ab5c63cf340345d7295/Power-Meter.svg"
     },
     {
         "title":"EZPlanner",
@@ -52,7 +52,7 @@ const cards = [
         "tags":["React.js", "Redux", "AWS", "Microservice"],
         "link": "https://github.com/EZPlanner",
         "linkText": "Github Org",
-        "media":"https://github.com/EZPlanner/ezplanner-react-client/blob/master/ezplanner.png?raw=true"
+        "media":"https://raw.githubusercontent.com/EZPlanner/ezplanner-react-client/884a05872c35f9408ec76785f57abdffcb45bf0a/ezplanner.svg"
     },
     {
         "title":"Group Spotify",
@@ -60,7 +60,7 @@ const cards = [
         "tags":["React.js", "Redux", "Flask", "Hackathon"],
         "link": "https://github.com/groupspotify",
         "linkText": "Github Org",
-        "media":"https://github.com/groupspotify/groupspotify-react-client/blob/master/Group%20Spotify.png?raw=true"
+        "media":"https://raw.githubusercontent.com/groupspotify/groupspotify-react-client/b39fadb351f425ae827089dcb1f625632540b15d/Group-Spotify.svg"
     },
     {
         "title":"Cool Down TO",
@@ -68,7 +68,7 @@ const cards = [
         "tags":["Android", "Open Data", "Hackathon"],
         "link": "https://github.com/zahin-mohammad/RuHacks18",
         "linkText": "Github Repo",
-        "media":"https://github.com/zahin-mohammad/RuHacks18/blob/master/CoolDown%20TO.png?raw=true"
+        "media":"https://raw.githubusercontent.com/zahin-mohammad/RuHacks18/721e2df29045624a0e8800ec105cd3a90fe0789d/CoolDown-TO.svg"
     }
 ]
 
