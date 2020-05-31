@@ -6,8 +6,14 @@ import Career from './pages/Career';
 import Projects from './pages/Projects';
 import DarkTheme from 'react-dark-theme';
 import Theme, {lightTheme, darkTheme} from './styles';
-import {Navbar, Nav} from 'react-bootstrap';
+import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import ResumeFile from './assets/zahin_resume.pdf';
+import {Dropdown} from 'react-bootstrap';
+import MenuIcon from '@material-ui/icons/Menu';
+import Typography from '@material-ui/core/Typography';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHamburger } from '@fortawesome/free-solid-svg-icons'
+
 
 import {
   BrowserRouter as Router,
@@ -21,8 +27,25 @@ class App extends React.Component {
     super(props)
 
     this.state = {
-      route: ""
+      route: "aboutme",
+      width: 0,
+      height: 0,
+      expandNavDrawer: false 
     }
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+  
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
 
   labelEqualsState = (label) => label.replace(/\s+/g, '').toLowerCase() === this.state.route;
@@ -38,39 +61,52 @@ class App extends React.Component {
       return (
         <div style={{backgroundColor:Theme.background, color:Theme.text}}>
          
-          <Navbar style={{backgroundColor: Theme.background}} sticky="top">
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar collapseOnSelect expand="lg" style={{backgroundColor: Theme.background}} sticky="top">
+            <Navbar.Toggle className="navbar-hamburger" aria-controls="responsive-navbar-nav">
+              <FontAwesomeIcon icon={faHamburger} color="var(--text)"/>
+
+            </Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">
               {/* TODO Add mochahub logo*/ }
             {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
+            
             <Nav className="mr-auto" activeKey={this.state.route}>
+ 
               <Nav.Link 
                 active = {this.state.route === this.labelKeys[0]} 
                 eventKey={this.labelKeys[0]}
                 onSelect = {this.navLinkOnClick}
-                style={{color:Theme.text}}
+                style={{color:this.state.route === this.labelKeys[0]?Theme.highlight:Theme.text, textDecoration: "underline",}}
                 >About Me</Nav.Link>
               <Nav.Link 
                 active = {this.state.route === this.labelKeys[1]} 
                 eventKey={this.labelKeys[1]}
                 onSelect = {this.navLinkOnClick}
-                style={{color:Theme.text}}
+                style={{color:this.state.route === this.labelKeys[1]?Theme.highlight:Theme.text, textDecoration: "underline",}}
                 >Projects</Nav.Link>
               <Nav.Link 
                 active = {this.state.route === this.labelKeys[2]} 
                 eventKey={this.labelKeys[2]}
                 onSelect = {this.navLinkOnClick}
-                style={{color:Theme.text}}
+                style={{color:this.state.route === this.labelKeys[2]?Theme.highlight:Theme.text, textDecoration: "underline",}}
                 >Career</Nav.Link>
             </Nav>
-            <a 
-            href={ResumeFile} 
-            download="zahin_resume.pdf" 
-            style ={{color:Theme.text, textDecoration: "underline", paddingRight:"15px"}}>
-              Resume
-            </a>
-            <DarkTheme light={lightTheme} dark={darkTheme} defaultDark/>
+
+            <Nav>
+              <Navbar.Text>
+                <a 
+                href={ResumeFile} 
+                download="zahin_resume.pdf" 
+                style ={{color:Theme.text, textDecoration: "underline", paddingRight:"15px"}}>
+                  Resume
+                </a>
+              </Navbar.Text>
+              <Navbar.Text>
+                <DarkTheme light={lightTheme} dark={darkTheme} defaultDark/>
+              </Navbar.Text>
+            </Nav>
             </Navbar.Collapse>
+            
           </Navbar>
           <Router>
               {this.state.route === "career" && <Redirect to="/career"/>}
