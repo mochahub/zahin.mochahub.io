@@ -40,7 +40,7 @@ Hey I am a 4A Computer Engineering student at the University of Waterloo with a 
 - Compilers (89%)
 - Algorithms and Data Structures (81%)  
 
-I am interested in backend development, cryptocurrency and machine learning / artifical intelligence. My most recent work experiences where at [Lumina](https://www.lumina.app/) and [Aterica](https://www.aterica.com/).  
+I am interested in backend development, cryptocurrency and machine learning / artifical intelligence. My most recent work experiences were at [Lumina](https://www.lumina.app/) and [Aterica](https://www.aterica.com/).  
 
 Outside of software development, I enjoy hiking, ping-pong, day-trading and making ☕!
 `);
