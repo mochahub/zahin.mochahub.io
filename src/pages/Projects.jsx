@@ -71,16 +71,16 @@ const cards = [
     }
 ]
 
-const projectsToNotShow = [
-    {
-        "title":"Github Analytics",
-        "desc":`A Work in Progress. This project scrapes the data on Github and analyzes them. For example, most used reaction in commit comments.`,
-        "tags":["Python", "Go", "Web Scrapper"],
-        "link": "https://github.com/zahin-mohammad/gh-analytics",
-        "linkText": "Github Repo",
-        "media":"https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-    },
-]
+// const projectsToNotShow = [
+//     {
+//         "title":"Github Analytics",
+//         "desc":`A Work in Progress. This project scrapes the data on Github and analyzes them. For example, most used reaction in commit comments.`,
+//         "tags":["Python", "Go", "Web Scrapper"],
+//         "link": "https://github.com/zahin-mohammad/gh-analytics",
+//         "linkText": "Github Repo",
+//         "media":"https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+//     },
+// ]
 
 
 export default class Projects extends Component {

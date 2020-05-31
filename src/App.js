@@ -6,11 +6,8 @@ import Career from './pages/Career';
 import Projects from './pages/Projects';
 import DarkTheme from 'react-dark-theme';
 import Theme, {lightTheme, darkTheme} from './styles';
-import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import {Navbar, Nav} from 'react-bootstrap';
 import ResumeFile from './assets/zahin_resume.pdf';
-import {Dropdown} from 'react-bootstrap';
-import MenuIcon from '@material-ui/icons/Menu';
-import Typography from '@material-ui/core/Typography';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHamburger } from '@fortawesome/free-solid-svg-icons'
 
