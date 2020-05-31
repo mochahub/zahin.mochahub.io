@@ -7,6 +7,8 @@ import Projects from './pages/Projects';
 import DarkTheme from 'react-dark-theme';
 import Theme, {lightTheme, darkTheme} from './styles';
 import {Navbar, Nav} from 'react-bootstrap';
+import ResumeFile from './zahin_resume.pdf';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -61,6 +63,12 @@ class App extends React.Component {
                 style={{color:Theme.text}}
                 >Career</Nav.Link>
             </Nav>
+            <a 
+            href={ResumeFile} 
+            download="zahin_resume.pdf" 
+            style ={{color:Theme.text, textDecoration: "underline", paddingRight:"15px"}}>
+              Resume
+            </a>
             <DarkTheme light={lightTheme} dark={darkTheme} defaultDark/>
             </Navbar.Collapse>
           </Navbar>
