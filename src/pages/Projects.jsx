@@ -60,7 +60,7 @@ const cards = [
         "tags":["React.js", "Redux", "Flask", "Hackathon"],
         "link": "https://github.com/groupspotify",
         "linkText": "Github Org",
-        "media":"https://avatars0.githubusercontent.com/u/47481227?s=200&v=4"
+        "media":"https://github.com/groupspotify/groupspotify-react-client/blob/master/Group%20Spotify.png?raw=true"
     },
     {
         "title":"Cool Down TO",
