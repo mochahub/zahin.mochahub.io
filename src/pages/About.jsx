@@ -16,15 +16,32 @@ const ghCalendarTheme = {
     grade0: '#ebedf0',
   };
 
-const markdown = 
-`Currently: <code> Unemployed and looking for Fall 2020 Internships</code>. You can reach out to me at <code>zahin.dev@gmail.com</code>.      
+// const markdown = 
+// `Currently: <span style="color:blue">some _This is Blue italic._ text</span><code> 
+// Unemployed and looking for Fall 2020 Internships</code>. You can reach out to me at <code>zahin.dev@gmail.com</code>.      
 
-Hey, I am a 4A Computer Engineering student at the University of Waterloo with a focus on software development. I expect to graduate in Winter 2021.  
+// Hey, I am a 4A Computer Engineering student at the University of Waterloo with a focus on software development. I expect to graduate in Winter 2021.  
   
-I am interested in backend development, cryptocurrency, and machine learning.
-I've previously worked at <code> Lumina </code> and <code>Aterica</code> as a backend developer.  
+// I am interested in backend development, cryptocurrency, and machine learning.
+// I've previously worked at <code> Lumina </code> and <code>Aterica</code> as a backend developer.  
 
-Outside of software development, I enjoy hiking, ping-pong, financial life-hacks, and watching van-life conversion videos on youtube.`
+// Outside of software development, I enjoy hiking, ping-pong, financial life-hacks, and watching van-life conversion videos on youtube.`
+
+const markdown = (`
+Currently \`unemployed\` and looking for \`Fall 2020\` internships. You can reach out to me at [zahin.dev@gmail.com](mailto:zahin.dev@gmail.com?subject[From%Portfolio]).  
+
+Hey I am a 4A Computer Engineering student at the University of Waterloo with a focus on software development. I am expected to graduate in June 2021. Some interesting courses I have taken/taking are:
+- Software Design and Architectures
+- Reinforcement Learning
+- Cooperative and Adaptive Algorithms
+- Database Systems (89%)
+- Compilers (89%)
+- Algorithms and Data Structures (81%)  
+
+I am interested in backend development, cryptocurrency and machine learning / artifical intelligence. My most recent work experiences where at [Lumina](https://www.lumina.app/) and [Aterica](https://www.aterica.com/).  
+
+Outside of software development, I enjoy hiking, ping-pong, day-trading and making ☕!
+`);
 
 
 export default class About extends Component {
