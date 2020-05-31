@@ -4,20 +4,14 @@ import { Redirect } from 'react-router';
 import About from './pages/About';
 import Career from './pages/Career';
 import Projects from './pages/Projects';
-import './app.css';
-import Stepper from '@material-ui/core/Stepper';
-import Step from '@material-ui/core/Step';
-import StepButton from '@material-ui/core/StepButton';
+import DarkTheme from 'react-dark-theme';
+import Theme, {lightTheme, darkTheme} from './styles';
+import {Navbar, Nav} from 'react-bootstrap';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
-import { StepLabel } from "@material-ui/core";
-
-
-
-const labels = ["About Me", "Projects", "Career"]
 
 class App extends React.Component {
 
@@ -28,31 +22,48 @@ class App extends React.Component {
       route: ""
     }
   }
+
   labelEqualsState = (label) => label.replace(/\s+/g, '').toLowerCase() === this.state.route;
+  
+  navLinkOnClick = (eventKey, event)=>{
+    this.setState({route:eventKey})
+  }
+  labels = ["About Me", "Projects", "Career"]
+  labelKeys = ["aboutme", "projects", "career"]
+
 
   render(){
       return (
-            <section className = "background">
-            <Stepper 
-              nonLinear activeStep={labels.findIndex(this.labelEqualsState)} 
-              style={{ backgroundColor: "transparent"}}>
-              {labels.map((label, index) => (
-               
-                <Step 
-                  key={label.replace(/\s+/g, '').toLowerCase()} >
-                  <StepButton 
-                    onClick={()=> {
-                      console.log(this.state);
-                      this.setState ({route:label.replace(/\s+/g, '').toLowerCase()});
-                    }} 
-                    completed={this.state.route === label.replace(/\s+/g, '').toLowerCase()}>
-                    <StepLabel>
-                      <div>{label}</div> 
-                    </StepLabel>
-                  </StepButton>
-                </Step>
-              ))}
-            </Stepper>
+        <div style={{backgroundColor:Theme.background, color:Theme.text}}>
+         
+          <Navbar bg="vh" sticky="top">
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              {/* TODO Add mochahub logo*/ }
+            {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
+            <Nav className="mr-auto" activeKey={this.state.route}>
+              <Nav.Link 
+                active = {this.state.route === this.labelKeys[0]} 
+                eventKey={this.labelKeys[0]}
+                onSelect = {this.navLinkOnClick}
+                style={{color:Theme.text}}
+                >About Me</Nav.Link>
+              <Nav.Link 
+                active = {this.state.route === this.labelKeys[1]} 
+                eventKey={this.labelKeys[1]}
+                onSelect = {this.navLinkOnClick}
+                style={{color:Theme.text}}
+                >Projects</Nav.Link>
+              <Nav.Link 
+                active = {this.state.route === this.labelKeys[2]} 
+                eventKey={this.labelKeys[2]}
+                onSelect = {this.navLinkOnClick}
+                style={{color:Theme.text}}
+                >Career</Nav.Link>
+            </Nav>
+            <DarkTheme light={lightTheme} dark={darkTheme} defaultDark/>
+            </Navbar.Collapse>
+          </Navbar>
           <Router>
               {this.state.route === "career" && <Redirect to="/career"/>}
               {this.state.route === "aboutme" && <Redirect to="/aboutme"/>}
@@ -64,8 +75,9 @@ class App extends React.Component {
                 <Route path={["/", "/aboutme"]} component = {About}/>
               </Switch>
             </div>
-          </Router>
-          </section>
+          </Router> 
+        </div>
+            
         )
   }
 }
