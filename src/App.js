@@ -22,9 +22,8 @@ class App extends React.Component {
 
   constructor(props){
     super(props)
-
     this.state = {
-      route: "aboutme",
+      route: window.location.pathname === "/"? "aboutme":window.location.pathname.substr(1),
       width: 0,
       height: 0,
       expandNavDrawer: false 
@@ -57,7 +56,7 @@ class App extends React.Component {
   render(){
       return (
         <div style={{backgroundColor:Theme.background, color:Theme.text}}>
-         
+    {console.log(window.location.pathname)}
           <Navbar collapseOnSelect expand="lg" style={{backgroundColor: Theme.background}} sticky="top">
             <Navbar.Toggle className="navbar-hamburger" aria-controls="responsive-navbar-nav">
               <FontAwesomeIcon icon={faHamburger} color="var(--text)"/>
