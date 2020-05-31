@@ -6,20 +6,11 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Col from 'react-bootstrap/Col';
 import Chip from '@material-ui/core/Chip';
 import ReactMarkdown from 'react-markdown';
 import GithubCorner from 'react-github-corner';
-import Theme from '../styles';
-
-
-// Social media proof of concept for database system course final
-// project
-// BCNF database design
-// Sample data mined from github API using python
-// ReactJs frontend, NodeJs backend, MySQL database
 
 const cards = [
     {
@@ -37,6 +28,14 @@ const cards = [
         "link": "https://github.com/zahin-mohammad/nrg-slack-app",
         "linkText": "Github Repo",
         "media":"https://raw.githubusercontent.com/zahin-mohammad/ece356-project/64702211c23743acf1d53ee7dee6388596b1c743/Github-PoC.svg"
+    },
+    {
+        "title":"Portfolio Website",
+        "desc":`This website! Made via many open source comonents and libraries. I am most proud of how clean the dark-mode functionality is (open source react component).`,
+        "tags":["React.js", "React bootstrap", "Firebase"],
+        "link": "https://github.com/zahin-mohammad/zahin.mochahub.io",
+        "linkText": "Github Repo",
+        "media":"https://raw.githubusercontent.com/zahin-mohammad/zahin.mochahub.io/f23714da0008b08724e574bd547ecec9c7fbd3bd/zahin.mochahub.io.svg"
     },
     {
         "title":"Power Meter",
