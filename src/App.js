@@ -24,28 +24,18 @@ class App extends React.Component {
     super(props)
     this.state = {
       route: window.location.pathname === "/"? "aboutme":window.location.pathname.substr(1),
-      width: 0,
-      height: 0,
-      expandNavDrawer: false 
     }
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
   
   componentDidMount() {
-    this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
   }
   
   componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWindowDimensions);
   }
   
   updateWindowDimensions() {
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
-
-  labelEqualsState = (label) => label.replace(/\s+/g, '').toLowerCase() === this.state.route;
-  
   navLinkOnClick = (eventKey, event)=>{
     this.setState({route:eventKey})
   }
