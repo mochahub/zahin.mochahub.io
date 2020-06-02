@@ -50,12 +50,9 @@ class App extends React.Component {
           <Navbar collapseOnSelect expand="lg" style={{backgroundColor: Theme.background}} sticky="top">
             <Navbar.Toggle className="navbar-hamburger" aria-controls="responsive-navbar-nav">
               <FontAwesomeIcon icon={faHamburger} color="var(--text)"/>
-
             </Navbar.Toggle>
+
             <Navbar.Collapse id="responsive-navbar-nav">
-              {/* TODO Add mochahub logo*/ }
-            {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
-            
             <Nav className="mr-auto" activeKey={this.state.route}>
  
               <Nav.Link 
@@ -87,12 +84,10 @@ class App extends React.Component {
                   Resume
                 </a>
               </Navbar.Text>
-              <Navbar.Text>
-                <DarkTheme light={lightTheme} dark={darkTheme} defaultDark/>
-              </Navbar.Text>
+              
             </Nav>
             </Navbar.Collapse>
-            
+              <DarkTheme light={lightTheme} dark={darkTheme} defaultDark/>
           </Navbar>
           <Router>
               {this.state.route === "career" && <Redirect to="/career"/>}
