@@ -126,7 +126,7 @@ export default class Projects extends Component {
             </CardActionArea>
             <CardActions>
             </CardActions>
-            <GithubCorner href={card.link} otostyle={{target:"_blank",rel:"noopener noreferrer"}}/>
+            <GithubCorner href={card.link} rel="noopener noreferrer" target="_blank"/>
             </Card>
             </Col>
         );
