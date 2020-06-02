@@ -7,6 +7,9 @@ import ReactMarkdown from 'react-markdown';
 import ReactTooltip from 'react-tooltip';
 import MyImage from '../assets/me.jpg';
 import Typography from '@material-ui/core/Typography';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMailBulk} from '@fortawesome/free-solid-svg-icons'
+import {faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 
 const ghCalendarTheme = {
     background: 'transparent',
@@ -31,7 +34,7 @@ Hey I am a 4A Computer Engineering student at the University of Waterloo and am 
 
 Throughout my university schooling and internships I have had a focus on software development, automation and ml/ai. I am most interested in backend development, cryptocurrency and machine learning / artifical intelligence. My most recent work experiences were at [Lumina](https://www.lumina.app/) and [Aterica](https://www.aterica.com/), both for backend development.
 
-Outside of software development, I enjoy hiking, ping-pong, day-trading and making ☕!
+Outside of software development, I enjoy hiking, ping-pong, day-trading and making ☕! You can buy me Coffee here [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X71S1S7).
 `);
 
 
@@ -45,6 +48,11 @@ export default class About extends Component {
                         <Typography gutterBottom variant="h2" component="h2">
                             Zahin Mohammad
                         </Typography>
+                        <Row noGutters = {false} style ={{paddingTop:"15px", paddingBottom:"15px", paddingRight:"25px", paddingLeft:"25px"}} className="align-items-center">
+                            <Col sm={4}><a href="https://www.linkedin.com/in/zahin-m/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} color="var(--text)" /></a></Col>
+                            <Col sm={4}><a href="https://github.com/zahin-mohammad" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} color="var(--text)" /></a></Col>
+                            <Col sm={4}><a href="mailto: zahin.dev@gmail.com" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faMailBulk} color="var(--text)" /></a></Col>
+                        </Row>
                         <img
                             style={{width:"300px", height:"300px", borderRadius:"100%"}}
                             className = "circle-div"
