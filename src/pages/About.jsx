@@ -34,8 +34,9 @@ Hey I am a 4A Computer Engineering student at the University of Waterloo and am 
 
 Throughout my university schooling and internships I have had a focus on software development, automation and ml/ai. I am most interested in backend development, cryptocurrency and machine learning / artifical intelligence. My most recent work experiences were at [Lumina](https://www.lumina.app/) and [Aterica](https://www.aterica.com/), both for backend development.
 
-Outside of software development, I enjoy hiking, ping-pong, day-trading and making ☕! You can buy me Coffee here [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X71S1S7).
+Outside of software development, I enjoy hiking, ping-pong, day-trading and making ☕! 
 `);
+// You can buy me Coffee here [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X71S1S7).
 
 
 export default class About extends Component {
