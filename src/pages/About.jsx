@@ -50,9 +50,9 @@ export default class About extends Component {
                             Zahin Mohammad
                         </Typography>
                         <Row noGutters = {false} style ={{paddingTop:"15px", paddingBottom:"15px", paddingRight:"25px", paddingLeft:"25px"}} className="align-items-center">
-                            <Col sm={4}><a href="https://www.linkedin.com/in/zahin-m/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} color="var(--text)" /></a></Col>
-                            <Col sm={4}><a href="https://github.com/zahin-mohammad" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} color="var(--text)" /></a></Col>
-                            <Col sm={4}><a href="mailto: zahin.dev@gmail.com" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faMailBulk} color="var(--text)" /></a></Col>
+                            <Col xs={4}><a href="https://www.linkedin.com/in/zahin-m/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} color="var(--text)" /></a></Col>
+                            <Col xs={4}><a href="https://github.com/zahin-mohammad" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} color="var(--text)" /></a></Col>
+                            <Col xs={4}><a href="mailto: zahin.dev@gmail.com" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faMailBulk} color="var(--text)" /></a></Col>
                         </Row>
                         <img
                             style={{width:"300px", height:"300px", borderRadius:"100%"}}
