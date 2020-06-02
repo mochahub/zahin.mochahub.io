@@ -12,6 +12,7 @@ import Chip from '@material-ui/core/Chip';
 import ReactMarkdown from 'react-markdown';
 import GithubCorner from 'react-github-corner';
 import {cards} from '../data/projects';
+import Theme from '../styles';
 
 export default class Projects extends Component {
     createChips(card){
@@ -31,7 +32,7 @@ export default class Projects extends Component {
     createCard(card){
         return(
             <Col xs ={12} lg={4} style = {{paddingBottom:"5vh", paddingRight:"0", paddingLeft:"0"}}>
-            <Card style={{borderRadius:"16px",  marginRight:"5px", marginLeft:"5px"}}>   
+            <Card style={{borderRadius:"16px",  marginRight:"5px", marginLeft:"5px", backgroundColor:Theme.text}}>   
             <CardActionArea>
                 <CardMedia
                 component="img"
@@ -45,7 +46,7 @@ export default class Projects extends Component {
                     {card.title}
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p" 
-                style={{maxHeight:"125px", minHeight:"125px"}}>
+                style={{maxHeight:"125px", minHeight:"125px", color: Theme.background}}>
                     <ReactMarkdown
                         source={card.desc}
                         escapeHtml={false}

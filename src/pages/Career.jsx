@@ -14,6 +14,7 @@ const timeLineEventStyle = {
     color: Theme.background,
 }
 const contentStyle ={
+    backgroundColor: Theme.text,
     borderRadius:"16px"
 }
 const titleStyle={
