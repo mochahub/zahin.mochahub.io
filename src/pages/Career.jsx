@@ -45,7 +45,7 @@ export default class Career extends Component {
                             style={timeLineEventStyle}
                             contentStyle={contentStyle}
                             titleStyle={titleStyle}
-                            icon={<FontAwesomeIcon icon={faCode} color="var(--background)" />}
+                            icon={<FontAwesomeIcon icon={faCode} color="#111111" />}
                         >
                             <ReactMarkdown
                                 source={card.desc}
