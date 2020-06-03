@@ -6,6 +6,7 @@ import Career from './pages/Career';
 import Projects from './pages/Projects';
 import DarkTheme from 'react-dark-theme';
 import Theme, {lightTheme, darkTheme} from './styles';
+import MochahubLogo from './assets/mochahub';
 import {Navbar, Nav} from 'react-bootstrap';
 import ResumeFile from './assets/zahin_resume.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -48,11 +49,18 @@ class App extends React.Component {
         <div style={{backgroundColor:Theme.background, color:Theme.text}}>
     {console.log(window.location.pathname)}
           <Navbar collapseOnSelect expand="lg" style={{backgroundColor: Theme.background}} sticky="top">
+          
             <Navbar.Toggle className="navbar-hamburger" aria-controls="responsive-navbar-nav">
               <FontAwesomeIcon icon={faHamburger} color="var(--text)"/>
             </Navbar.Toggle>
+            
 
             <Navbar.Collapse id="responsive-navbar-nav">
+              <Navbar.Brand >
+                <MochahubLogo
+                  fill ={Theme.text} 
+                />
+              </Navbar.Brand> 
             <Nav className="mr-auto" activeKey={this.state.route}>
  
               <Nav.Link 
