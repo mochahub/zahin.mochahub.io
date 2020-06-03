@@ -43,7 +43,7 @@ export default class About extends Component {
     render() {
         return (
             <Container>
-                <Row noGutters = {false} style ={{paddingTop:"10vh"}} className="align-items-center">
+                <Row noGutters = {false} style ={{paddingTop:"10vh"}} className="align-items-start">
                 <Col sm = {12 }lg={6}>
                     <div  style = {{textAlign:"center"}}>
                         <Typography gutterBottom variant="h2" component="h2">
