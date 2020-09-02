@@ -25,9 +25,9 @@ const markdown = (`
 Current status: Incoming \`BitGo Software Engineering Intern\` for Fall 2020. You can reach out to me at [zahin.dev@gmail.com](mailto:zahin.dev@gmail.com?subject[From%Portfolio]).  
 
 Hey I am a 4A Computer Engineering student at the University of Waterloo and am expected to graduate in June 2021. Some interesting courses I have taken/taking are (🚧 in progress):
-- Software Design and Architectures 🚧
-- Reinforcement Learning 🚧
-- Cooperative and Adaptive Algorithms 🚧
+- Software Design and Architectures 94
+- Reinforcement Learning 93
+- Cooperative and Adaptive Algorithms 88
 - Database Systems (89%)
 - Compilers (89%)
 - Algorithms and Data Structures (81%)
