@@ -22,9 +22,11 @@ const ghCalendarTheme = {
   };
 
 const markdown = (`
-Current status: Incoming \`BitGo Software Engineering Intern\` for Fall 2020. You can reach out to me at [zahin.dev@gmail.com](mailto:zahin.dev@gmail.com?subject[From%Portfolio]).  
+Current status: Incoming \`BitGo Software Engineering\`. You can reach out to me at [zahin.dev@gmail.com](mailto:zahin.dev@gmail.com?subject[From%Portfolio]).  
 
-Hey I am a 4A Computer Engineering student at the University of Waterloo and am expected to graduate in June 2021. Some interesting courses I have taken/taking are (🚧 in progress):
+Hey I am a 4B Computer Engineering student at the University of Waterloo and am expected to graduate in June 2021. Some interesting courses I have taken/taking are (🚧 in progress):
+- Programming for Performance (🚧)
+- Autonomous Vehicles (🚧)
 - Software Design and Architectures (94%)
 - Reinforcement Learning (93%)
 - Cooperative and Adaptive Algorithms (88%)
@@ -32,7 +34,8 @@ Hey I am a 4A Computer Engineering student at the University of Waterloo and am 
 - Compilers (89%)
 - Algorithms and Data Structures (81%)
 
-Throughout my university schooling and internships I have had a focus on software development, automation and ml/ai. I am most interested in backend development, cryptocurrency and machine learning / artifical intelligence. My most recent work experiences were at [Lumina](https://www.lumina.app/) and [Aterica](https://www.aterica.com/), both for backend development.
+Throughout my university schooling and internships I have had a focus on software development, automation and ml/ai. I am most interested in backend development, cryptocurrency and machine learning / artifical intelligence. My most recent work experiences were at [BitGo](https://www.bitgo.com/) and [Lumina](https://www.bitgo.com/newsroom/press-releases/lumina-acquisition), both for software engineering.
+Currently I am learning how to visualize and extract usefull blockhain data (prices, volume, orderbook, transactions, etc.)
 
 Outside of software development, I enjoy hiking, ping-pong, day-trading and making ☕! 
 `);
