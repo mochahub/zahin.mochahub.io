@@ -1,5 +1,15 @@
 export const cards = [
     {
+        "title":"Coinprice (Price Scraper)",
+        "desc":`A web-scraper built with \`goalng\`, \`influxDB\`, and \`postgreSQL\` for cryptocurrencies. 
+        One minute candlestick price data is scraped from various exchanges including \`Binance\`, and \`CoinbasePro\`.
+        Pricing data dashboards are built in \`chronogrpah\`.`,
+        "tags":["Golang", "Crypto", "InfluxDB", "PostgreSQL"],
+        "link": "https://github.com/mochahub/coinprice-scraper",
+        "linkText": "Github Repo",
+        "media":"https://raw.githubusercontent.com/mochahub/coinprice-scraper/master/coinprice-scraper.png"
+    },
+    {
         "title":"NRG Slack App",
         "desc":`A service that sends slack messages when specified \`energi\` addresses have balance changes.`,
         "tags":["Python", "Heroku", "Crypto", "Slack"],
