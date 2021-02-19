@@ -7,10 +7,10 @@ export const cards = [
         "start": '2020-09-01',
         "end" : '2020-12-30',
         "desc" : `[BitGo](https://www.bitgo.com/) offers Institutional digital asset custody, trading, and finance. 
-        At BitGo I worked in the portfolio team, assisting in migrating the aquired app Lumina into the BitGo stack and ecosystem for a unified experience both from the UI/UX and from the backend data model perspective. 
-        I worked closesly with developers across different teams and tech stacks to create the project timeline, technical design doccuments, and code to migrate users.
-        During my internship I was in charge of this project as my quarterly goal along with assisitng in the daily bug fixes/fires, and have led it to completion. 
-        The most challenging aspect of this migration was making it backwards compatible for clients that have chosen to not migrate to the new experience while minimzing the number of code paths present in the system.
+        At BitGo I worked in the portfolio team, assisting in migrating the acquired app Lumina into the BitGo stack and ecosystem for a unified experience both from the UI/UX and from the backend data model perspective. 
+        I worked closely with developers across different teams and tech stacks to create the project timeline, technical design documents, and code to migrate users.
+        During my internship I was in charge of this project as my quarterly goal along with assisting in the daily bug fixes/fires, and have led it to completion. 
+        The most challenging aspect of this migration was making it backwards compatible for clients that have chosen to not migrate to the new experience while minimizing the number of code paths present in the system.
         \nThroughout this internship I primarily used \`golang\`, \`typescript\`, \`javascript\`, \`postgresql\`, \`graphql\`, and \`gooq\`,
         `
     },

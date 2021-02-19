@@ -35,7 +35,7 @@ Hey I am a 4B Computer Engineering student at the University of Waterloo and am 
 - Algorithms and Data Structures (81%)
 
 Throughout my university schooling and internships I have had a focus on software development, automation and ml/ai. I am most interested in backend development, cryptocurrency and machine learning / artifical intelligence. My most recent work experiences were at [BitGo](https://www.bitgo.com/) and [Lumina](https://www.bitgo.com/newsroom/press-releases/lumina-acquisition), both for software engineering.
-Currently I am learning how to visualize and extract usefull blockhain data (prices, volume, orderbook, transactions, etc.)
+Currently I am learning how to visualize and extract useful blockchain data (prices, volume, order-book, transactions, etc.)
 
 Outside of software development, I enjoy hiking, ping-pong, day-trading and making ☕! 
 `);
