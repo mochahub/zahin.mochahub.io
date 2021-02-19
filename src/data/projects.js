@@ -1,5 +1,15 @@
 export const cards = [
     {
+        "title":"Crypto Balance Check Bot",
+        "desc":`A bot that sends scheduled messages on a users cryptocurrencies positions across various exchanges. 
+        The schedule worker is built with  \`python\`, and is deployed on \`heroku\`. 
+        Currently only \`Coinbase\` and \`Binance\` are supported.`,
+        "tags":["Python", "Heroku", "Crypto"],
+        "link": "https://github.com/zahin-mohammad/crypto-balance-check",
+        "linkText": "Github Repo",
+        "media":"https://raw.githubusercontent.com/zahin-mohammad/crypto-balance-check/master/images/crypto-balance-check-white.svg"
+    },
+    {
         "title":"Coinprice (Price Scraper)",
         "desc":`A web-scraper built with \`goalng\`, \`influxDB\`, and \`postgreSQL\` for cryptocurrencies. 
         One minute candlestick price data is scraped from various exchanges including \`Binance\`, and \`CoinbasePro\`.
