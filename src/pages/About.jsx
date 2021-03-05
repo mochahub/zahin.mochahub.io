@@ -4,7 +4,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import GitHubCalendar from 'react-github-calendar';
 import ReactMarkdown from 'react-markdown';
-import ReactTooltip from 'react-tooltip';
 import MyImage from '../assets/me.jpg';
 import Typography from '@material-ui/core/Typography';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -13,12 +12,12 @@ import {faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 
 const ghCalendarTheme = {
     background: 'transparent',
-    text:   'var(--text)',
-    grade4: '#196127',
-    grade3: '#239a3b',
-    grade2: '#7bc96f',
-    grade1: '#c6e48b',
-    grade0: '#ebedf0',
+    text:   'var(--ghCalendarThemeText)',
+    grade4: 'var(--ghCalendarThemeGrade4)',
+    grade3: 'var(--ghCalendarThemeGrade3)',
+    grade2: 'var(--ghCalendarThemeGrade2)',
+    grade1: 'var(--ghCalendarThemeGrade1)',
+    grade0: 'var(--ghCalendarThemeGrade0)',
   };
 
 const markdown = (`
@@ -39,7 +38,6 @@ Currently I am learning how to visualize and extract useful blockchain data (pri
 
 Outside of software development, I enjoy hiking, ping-pong, day-trading and making ☕! 
 `);
-// You can buy me Coffee here [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X71S1S7).
 
 
 export default class About extends Component {
@@ -63,9 +61,7 @@ export default class About extends Component {
                             src={MyImage}
                             alt="Zahin Mohammad"
                         />
-                        <GitHubCalendar username="zahin-mohammad" theme={ghCalendarTheme}>
-                            <ReactTooltip delayShow={50} html />
-                        </GitHubCalendar>
+                        <GitHubCalendar username="zahin-mohammad" theme={ghCalendarTheme} color="hsl(203, 82%, 33%)" />
                     </div>
                 </Col>
                 <Col sm = {12} lg={6}>
