@@ -17,7 +17,7 @@ export const cards = [
         "tags":["Golang", "Crypto", "InfluxDB", "PostgreSQL"],
         "link": "https://github.com/mochahub/coinprice-scraper",
         "linkText": "Github Repo",
-        "media":"https://raw.githubusercontent.com/mochahub/coinprice-scraper/master/coinprice-scraper.png"
+        "media":"https://raw.githubusercontent.com/mochahub/coinprice-scraper/master/images/coinprice-scraper-white.svg"
     },
     {
         "title":"NRG Slack App",
