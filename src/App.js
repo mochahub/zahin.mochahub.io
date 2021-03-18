@@ -8,7 +8,7 @@ import DarkTheme from "react-dark-theme";
 import Theme, { lightTheme, darkTheme } from "./styles";
 import MochahubLogo from "./assets/mochahub";
 import { Navbar, Nav } from "react-bootstrap";
-import ResumeFile from "./assets/zahin_resume.pdf";
+// import ResumeFile from "./assets/zahin_resume.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHamburger } from "@fortawesome/free-solid-svg-icons";
 
