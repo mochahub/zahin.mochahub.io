@@ -114,6 +114,7 @@ export default class About extends Component {
               Current Status: Incoming{" "}
               <RoughNotation
                 type="underline"
+                multiline= {true}
                 show={true}
                 strokeWidth={5}
                 color="var(--highlight)"
@@ -123,6 +124,7 @@ export default class About extends Component {
               You can reach out to me at{" "}
               <RoughNotation
                 type="underline"
+                multiline= {true}
                 show={true}
                 strokeWidth={5}
                 color="var(--highlight)"
@@ -172,6 +174,7 @@ export default class About extends Component {
               were at{" "}
               <RoughNotation
                 type="underline"
+                multiline= {true}
                 show={true}
                 strokeWidth={5}
                 color="var(--highlight)"
@@ -183,6 +186,7 @@ export default class About extends Component {
               and{" "}
               <RoughNotation
                 type="underline"
+                multiline= {true}
                 show={true}
                 strokeWidth={5}
                 color="var(--highlight)"
