@@ -103,7 +103,7 @@ class App extends React.Component {
               </Nav.Link>
             </Nav>
 
-            <Nav>
+            {/* <Nav>
               <Navbar.Text>
                 <a
                   href={ResumeFile}
@@ -117,7 +117,7 @@ class App extends React.Component {
                   Resume
                 </a>
               </Navbar.Text>
-            </Nav>
+            </Nav> */}
           </Navbar.Collapse>
           <DarkTheme light={lightTheme} dark={darkTheme} defaultDark />
         </Navbar>
