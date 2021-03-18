@@ -119,7 +119,7 @@ class App extends React.Component {
               </Navbar.Text>
             </Nav> */}
           </Navbar.Collapse>
-          <DarkTheme light={lightTheme} dark={darkTheme} defaultDark />
+          <DarkTheme light={lightTheme} dark={darkTheme} defaultDark={window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches} />
         </Navbar>
         <Router>
           {this.state.route === "career" && <Redirect to="/career" />}
