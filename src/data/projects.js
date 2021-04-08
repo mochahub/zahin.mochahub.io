@@ -19,7 +19,7 @@ export const cards = [
     link: "https://github.com/mochahub/coinprice-scraper",
     linkText: "Github Repo",
     media:
-      "https://raw.githubusercontent.com/mochahub/coinprice-scraper/master/images/coinprice-scraper-white.svg",
+      "https://raw.githubusercontent.com/mochahub/coinprice-scraper/master/docs/images/coinprice-scraper-white.svg",
   },
   {
     title: "NRG Slack App",
